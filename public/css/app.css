@@ -54,3 +54,55 @@ header .container ul li a:hover, header .container ul li a:focus, header .contai
   color: #0282F9;
   border-bottom: 2px solid #0282F9;
 }
+
+footer .footer-top {
+  background-image: url("/img/footer-bg.jpg");
+  background-size: cover;
+}
+footer .footer-top .container {
+  padding: 20px 0;
+  background-image: url("/img/dc-logo-bg.png");
+  background-position-x: right;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+footer .footer-top .col {
+  margin-right: 20px;
+}
+footer .footer-top .col h4 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 10px;
+}
+footer .footer-top .col ul {
+  margin-top: 10px;
+}
+footer .footer-top .col ul li a {
+  color: grey;
+}
+footer .footer-bottom {
+  background-color: #303030;
+}
+footer .footer-bottom .container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+}
+footer .footer-bottom .container .side-left .cta {
+  display: block;
+  padding: 1em;
+  color: white;
+  border: 2px solid #0282F9;
+}
+footer .footer-bottom .container .side-right {
+  align-items: center;
+}
+footer .footer-bottom .container .side-right h3 {
+  color: #0282F9;
+  margin-right: 10px;
+}
+footer .footer-bottom .container .side-right .social li a {
+  margin-right: 10px;
+  display: block;
+}

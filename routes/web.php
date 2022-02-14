@@ -235,9 +235,9 @@ Route::get('/comics', function () {
                 "Joëlle Jones"
             ],
         ],
-    ];
+     ];
 
-    return view('guest.comics');
+    return view('guest.comics', ['comics' => $comics]);
 })->name('comics');
 
 Route::get('/movies', function () {

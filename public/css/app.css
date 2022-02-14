@@ -136,6 +136,21 @@ footer .footer-bottom .container .side-right .social li a {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+.comics .main-top .container .comics .comic-container {
+  flex-basis: calc(16.6666666667% - 20px);
+  margin: 0 10px 30px;
+}
+.comics .main-top .container .comics .comic-container h2 {
+  font-size: 1.2em;
+}
+.comics .main-top .container .comics .comic-container .img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.comics .main-top .container .comics .comic-container .img img {
+  width: 100%;
+}
 .comics .main-top .container .button {
   text-align: center;
   margin-bottom: 20px;

@@ -14,7 +14,14 @@
             </div>
             <div class="container">
                 <div class="comics flex">
-                <!-- QUI FOREACH -->
+                    @foreach ($comics as $comic)
+                        <div class="comic-container">
+                            <div class="img">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            </div>
+                            <h2>{{ $comic['title'] }}</h2>
+                        </div>
+                    @endforeach
                 </div>
                 <div class="button">
                     <a class="load-more" href="#">

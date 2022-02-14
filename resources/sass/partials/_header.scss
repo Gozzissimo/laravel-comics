@@ -1,0 +1,26 @@
+header {
+        margin: 20px 0;
+        color: $blackFontColor;
+        font-size: 1em;
+        .container {
+            justify-content: space-between;
+            .logo img {
+                width: 70%;
+            }      
+            ul {
+                align-items: center;
+                li a {
+                    color: $blackFontColor;
+                    display: block;
+                    padding: 1em;
+                    text-transform: uppercase;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $blueFontColor;
+                        border-bottom: 2px solid $blueFontColor;
+                    }
+                }
+            }
+        }
+    }

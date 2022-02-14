@@ -44,15 +44,15 @@ header .container .logo img {
 header .container ul {
   align-items: center;
 }
+header .container ul li:hover, header .container ul li:focus, header .container ul li:active, header .container ul li.active {
+  color: #0282F9;
+  border-bottom: 2px solid #0282F9;
+}
 header .container ul li a {
   color: #303030;
   display: block;
   padding: 1em;
   text-transform: uppercase;
-}
-header .container ul li a:hover, header .container ul li a:focus, header .container ul li a:active {
-  color: #0282F9;
-  border-bottom: 2px solid #0282F9;
 }
 
 footer .footer-top {

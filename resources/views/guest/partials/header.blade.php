@@ -6,34 +6,34 @@
             </a>
         </div>
         <ul class="flex">
-            <li>
+            <li class="{{ 'characters' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('characters') }}">characters</a>
             </li>
-            <li>
+            <li class="{{ 'comics' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('comics') }}">comics</a>
             </li>
-            <li>
+            <li class="{{ 'movies' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('movies') }}">movies</a>
             </li>
-            <li>
+            <li class="{{ 'tv' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('tv') }}">tv</a>
             </li>
-            <li>
+            <li class="{{ 'games' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('games') }}">games</a>
             </li>
-            <li>
+            <li class="{{ 'collectibles' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('collectibles') }}">collectibles</a>
             </li>
-            <li>
+            <li class="{{ 'videos' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('videos') }}">videos</a>
             </li>
-            <li>
+            <li class="{{ 'fans' === Route::currentRouteName() ? 'active' : '' }}" >
                 <a href="{{ route('fans') }}">fans</a>
             </li>
-            <li>
+            <li class="{{ 'news' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('news') }}">news</a>
             </li>
-            <li>
+            <li class="{{ 'shop' === Route::currentRouteName() ? 'active' : '' }}">
                 <a href="{{ route('shop') }}">shop</a>
             </li>
         </ul>

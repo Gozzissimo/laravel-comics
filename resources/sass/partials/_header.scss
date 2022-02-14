@@ -9,16 +9,19 @@ header {
             }      
             ul {
                 align-items: center;
-                li a {
-                    color: $blackFontColor;
-                    display: block;
-                    padding: 1em;
-                    text-transform: uppercase;
+                li {
                     &:hover,
                     &:focus,
-                    &:active {
+                    &:active,
+                    &.active {
                         color: $blueFontColor;
                         border-bottom: 2px solid $blueFontColor;
+                    }
+                    a {
+                        color: $blackFontColor;
+                        display: block;
+                        padding: 1em;
+                        text-transform: uppercase;
                     }
                 }
             }

@@ -1,9 +1,9 @@
 @extends('guest.layout.base')
 
 @section('documentTitle')
-    DC Comics | Comics
+    DC Comics | Comicbook
 @endsection
 
 @section('content')
-    Tutti i fumetti
+    Batman e Robin
 @endsection

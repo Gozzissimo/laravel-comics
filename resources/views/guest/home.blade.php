@@ -1,7 +1,7 @@
 @extends('guest.layout.base')
 
 @section('documentTitle')
-    Home
+    DC Comics | Home
 @endsection
 
 @section('content')

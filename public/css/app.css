@@ -106,3 +106,64 @@ footer .footer-bottom .container .side-right .social li a {
   margin-right: 10px;
   display: block;
 }
+
+.comics {
+  background-color: black;
+}
+.comics .main-top {
+  color: white;
+}
+.comics .main-top .jumbotron {
+  height: 400px;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20px;
+}
+.comics .main-top .jumbotron h1 {
+  background-color: #0282F9;
+  display: inline-block;
+  position: absolute;
+  top: 92%;
+  left: 15%;
+  padding: 0.3em 1em;
+}
+.comics .main-top .container .comics {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.comics .main-top .container .button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.comics .main-top .container .button .load-more {
+  display: inline-block;
+  color: white;
+  background-color: #0282F9;
+  border: none;
+  padding: 10px 50px;
+}
+.comics .main-bottom {
+  background-color: #0282F9;
+  padding: 30px 0;
+}
+.comics .main-bottom .container ul {
+  align-items: center;
+  justify-content: center;
+}
+.comics .main-bottom .container ul li {
+  align-items: center;
+  flex-basis: 20%;
+}
+.comics .main-bottom .container ul li img {
+  width: 40px;
+}
+.comics .main-bottom .container ul li a {
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: white;
+}

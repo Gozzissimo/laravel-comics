@@ -139,6 +139,7 @@ footer .footer-bottom .container .side-right .social li a {
 .comics .main-top .container .comics .comic-container {
   flex-basis: calc(16.6666666667% - 20px);
   margin: 0 10px 30px;
+  color: white;
 }
 .comics .main-top .container .comics .comic-container h2 {
   font-size: 1.2em;

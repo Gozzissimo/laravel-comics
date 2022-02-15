@@ -15,12 +15,11 @@
             <div class="container">
                 <div class="comics flex">
                     @foreach ($comics as $comic)
-                        <div class="comic-container">
+                        <a class="comic-container" href="#">
                             <div class="img">
                                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                             </div>
                             <h2>{{ $comic['title'] }}</h2>
-                        </div>
                     @endforeach
                 </div>
                 <div class="button">

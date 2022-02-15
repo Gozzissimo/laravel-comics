@@ -1,9 +1,9 @@
 @extends('guest.layout.base')
 
 @section('documentTitle')
-    DC Comics | Comicnovel
+    DC Comics | {{ $nomePagina }}
 @endsection
 
 @section('content')
-    Batman e Robin
+    IN QUESTA SEZIONE CI DOVREBBE ESSERE LA PAGINA RIFERITA A UN SINGOLO FUMETTO
 @endsection

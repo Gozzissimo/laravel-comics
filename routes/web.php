@@ -23,13 +23,25 @@ Route::get('/characters', function () {
 
 Route::get('/comics', function () {
     $comics = config('comics');
-    $collection = collect($comics);
+    // $collection = collect($comics);
     return view('guest.comics', ['comics' => $comics]);
 })->name('comics');
 
-// Route::get('/comics/{id}', function ($id) {
-//     return view('guest.comicnovel');
-// })->name('comicnovel');
+Route::get('/comics/{title}', function ($title) {
+
+    $collection = collect(config('comics'));
+    $comicnovel = $collection->where('title', $title);
+
+    $singlenovel = '';
+    foreach ($comicnovel as $value) {
+        $singlenovel = $value;
+    }
+
+    return view('guest.comicnovel', [
+        'comicnovel' => $singlenovel,
+        'nomePagina' => ''
+    ]);
+})->name('comicnovel');
 
 Route::get('/movies', function () {
     return view('guest.movies');

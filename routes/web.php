@@ -27,17 +27,19 @@ Route::get('/comics', function () {
     return view('guest.comics', ['comics' => $comics]);
 })->name('comics');
 
-Route::get('/comics/{title}', function ($title) {
-
+// pagina singolo fumetto
+Route::get('comics/{id}', function ($id) {
+    
     $collection = collect(config('comics'));
-    $comicnovel = $collection->where('title', $title);
+    $comicnovel = $collection->where('id', $id);
 
     $singlenovel = '';
+
     foreach ($comicnovel as $value) {
         $singlenovel = $value;
     }
 
-    return view('guest.product', [
+    return view('guest.comicnovel', [
         'comicnovel' => $singlenovel,
         'nomePagina' => $singlenovel['title']
     ]);

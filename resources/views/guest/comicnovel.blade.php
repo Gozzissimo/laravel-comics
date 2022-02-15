@@ -6,4 +6,5 @@
 
 @section('content')
     IN QUESTA SEZIONE CI DOVREBBE ESSERE LA PAGINA RIFERITA A UN SINGOLO FUMETTO
+    {{ $comicnovel['title'] }}
 @endsection

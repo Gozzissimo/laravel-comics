@@ -37,9 +37,9 @@ Route::get('/comics/{title}', function ($title) {
         $singlenovel = $value;
     }
 
-    return view('guest.comicnovel', [
+    return view('guest.product', [
         'comicnovel' => $singlenovel,
-        'nomePagina' => ''
+        'nomePagina' => $singlenovel['title']
     ]);
 })->name('comicnovel');
 
